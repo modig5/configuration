@@ -24,7 +24,6 @@ echo "Opening: $remote_url"
 # Open the URL in the default browser
 case "$(uname -s)" in
     Linux*)     xdg-open "$remote_url" ;;
-        *)          echo "Unsupported OS. Please open manually: $remote_url" ;;
-
+    Darwin*)    open "$remote_url" ;;
+    *)          echo "Unsupported OS. Please open manually: $remote_url" ;;
 esac
-
