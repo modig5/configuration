@@ -1,0 +1,24 @@
+# Python
+[[language]]
+name = "python"
+language-servers = ["pyright"]
+
+[language-server.pylsp.config.pylsp.plugins]
+pylint = { enabled = true }
+
+# Rust
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+# C
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+
+[language-server.clangd]
+command = "clangd"
+
