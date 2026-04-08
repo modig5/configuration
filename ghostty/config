@@ -1,9 +1,11 @@
 theme = Gruvbox Dark
 font-family = "JetBrainsMono Nerd Font"
-font-size = 12 
+font-size = 20
 gtk-titlebar = false
 confirm-close-surface = false
 window-save-state = always
+
+macos-titlebar-style = hidden
 
 window-padding-x = 8
 window-padding-y = 8
