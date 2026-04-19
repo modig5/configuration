@@ -1,0 +1,30 @@
+{ ... }: {
+  programs.tmux = {
+    enable = true;
+    mouse = true;
+    baseIndex = 1;
+    prefix = "C-Space";
+    historyLimit = 5000;
+    keyMode = "vi";
+    extraConfig = ''
+      unbind r
+      bind r source-file ~/.tmux.conf
+      unbind C-b
+      bind-key C-Space send-prefix
+      bind g run-shell "~/.config/scripts/open-github.sh"
+      bind -r k select-pane -U
+      bind -r j select-pane -D
+      bind -r h select-pane -L
+      bind -r l select-pane -R
+      set -g status-position bottom
+      set -g status-bg colour234
+      set -g status-fg colour137
+      set -g status-left ""
+      set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S '
+      set -g status-right-length 50
+      set -g status-left-length 20
+      setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F '
+      setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
+    '';
+  };
+}
