@@ -16,10 +16,18 @@
     wget
     ripgrep
     jq
-    helix
     nerd-fonts.jetbrains-mono
     zoxide
     yazi
+    pyright
+    rust-analyzer
+    clang-tools
+    nixd
+    nixfmt-rfc-style
+    rustup
+    jdk
+    google-java-format
+    jdt-language-server
   ];
 
   homebrew = {
@@ -42,6 +50,7 @@
       ./modules/fish.nix
       ./modules/tmux.nix
       ./modules/ghostty.nix
+      ./modules/helix.nix
     ];
 
     home.stateVersion = "24.05";
@@ -59,3 +68,4 @@
   system.stateVersion = 4;
   nixpkgs.hostPlatform = "aarch64-darwin";
 }
+
