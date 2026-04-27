@@ -13,6 +13,7 @@
   environment.systemPackages = with pkgs; [
     git
     curl
+    fastfetch
     wget
     ripgrep
     jq
