@@ -101,16 +101,6 @@
       set -g fish_color_dimmed 555
       set -g fish_color_separator 999
 
-      set -g __fish_git_prompt_showdirtystate yes
-      set -g __fish_git_prompt_showupstream auto
-      set -g __fish_git_prompt_char_upstream_equal ""
-      set -g __fish_git_prompt_char_upstream_ahead "↑"
-      set -g __fish_git_prompt_char_upstream_behind "↓"
-      set -g __fish_git_prompt_color_branch yellow
-      set -g __fish_git_prompt_color_dirtystate red
-      set -g __fish_git_prompt_color_upstream_ahead ffb90f
-      set -g __fish_git_prompt_color_upstream_behind blue
-
       set -g fish_pager_color_completion normal
       set -g fish_pager_color_description 555
       set -g fish_pager_color_prefix cyan

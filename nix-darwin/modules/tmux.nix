@@ -8,7 +8,7 @@
     keyMode = "vi";
     extraConfig = ''
       unbind r
-      bind r source-file ~/.tmux.conf
+      bind r source-file ~/.config/tmux/tmux.conf
       unbind C-b
       bind-key C-Space send-prefix
       bind g run-shell "~/.config/scripts/open-github.sh"

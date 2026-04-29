@@ -77,7 +77,6 @@
       ];
 
       language-server = {
-        pylsp.config.pylsp.plugins.pylint.enabled = true;
         rust-analyzer.command = "rust-analyzer";
         clangd.command = "clangd";
         nixd.command = "nixd";
