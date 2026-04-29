@@ -7,6 +7,7 @@
     confirm-close-surface = false
     window-save-state = always
     macos-titlebar-style = hidden
+    maximize = true
     window-padding-x = 8
     window-padding-y = 8
     mouse-hide-while-typing = true
