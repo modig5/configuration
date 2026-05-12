@@ -21,11 +21,12 @@
     nerd-fonts.jetbrains-mono
     zoxide
     yazi
+    btop
     pyright
     rust-analyzer
     clang-tools
     nixd
-    nixfmt-rfc-style
+    nixfmt
     rustup
     jdk
     google-java-format

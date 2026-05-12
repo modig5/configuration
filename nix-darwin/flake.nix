@@ -10,7 +10,7 @@
   };
 
   outputs = inputs@{ nix-darwin, nixpkgs, home-manager, ... }: {
-    darwinConfigurations."MacBook-Pro-2" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."M5-Pro" = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
         ./configuration.nix
