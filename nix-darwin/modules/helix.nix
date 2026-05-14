@@ -46,7 +46,8 @@
     themes.custom = {
       inherits = "gruvbox_dark_hard";
       "comment" = { fg = "gray"; };
-      "variable.builtin" = { };
+      "constructor" = { fg = "fg1"; };
+      "type.enum.variant" = { fg = "fg1"; };
     };
 
     languages = {
