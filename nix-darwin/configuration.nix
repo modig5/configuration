@@ -17,6 +17,8 @@
     wget
     ripgrep
     jq
+    bat
+    fzf    
     jujutsu
     nerd-fonts.jetbrains-mono
     zoxide
