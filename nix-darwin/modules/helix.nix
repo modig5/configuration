@@ -8,7 +8,7 @@
 
       editor = {
         line-number = "relative";
-        auto-completion = false;
+        auto-completion = true;
         bufferline = "multiple";
         color-modes = true;
         cursorline = true;
