@@ -23,6 +23,7 @@
     nerd-fonts.jetbrains-mono
     zoxide
     yazi
+    zellij
     btop
     pyright
     rust-analyzer
@@ -30,9 +31,11 @@
     nixd
     nixfmt
     rustup
+    elan
     jdk
     google-java-format
     jdt-language-server
+    asm-lsp
   ];
 
   homebrew = {

@@ -6,6 +6,10 @@
       fish_add_path $HOME/.local/bin
     '';
 
+    shellAliases = {
+      helium = "/Applications/Helium.app/Contents/MacOS/Helium";
+    };
+
     shellAbbrs = {
       ga = "git add";
       gc = "git commit";

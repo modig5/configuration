@@ -46,6 +46,7 @@
     themes.custom = {
       inherits = "gruvbox_dark_hard";
       "variable.builtin" = { };
+      "variable.parameter" = {fg = "fg1"; };
       "comment" = { fg = "gray"; };
       "constructor" = { fg = "fg1"; };
       "type.enum.variant" = { fg = "fg1"; };
@@ -76,6 +77,14 @@
           formatter.command = "google-java-format";
           formatter.args = [ "-" ];
         }
+        {
+          name = "gas";
+          language-servers = [ "asm-lsp" ];
+        }
+        {
+          name = "nasm";
+          language-servers = [ "asm-lsp" ];
+        }
       ];
 
       language-server = {
@@ -83,6 +92,7 @@
         clangd.command = "clangd";
         nixd.command = "nixd";
         jdtls.command = "jdtls";
+        asm-lsp.command = "asm-lsp";
       };
     };
   };
