@@ -9,6 +9,7 @@
     extraConfig = ''
       unbind r
       bind r source-file ~/.config/tmux/tmux.conf
+      bind b display-popup -w 80% -h 80% -E "btop"
       unbind C-b
       bind-key C-Space send-prefix
       bind g run-shell "~/.config/scripts/open-github.sh"
